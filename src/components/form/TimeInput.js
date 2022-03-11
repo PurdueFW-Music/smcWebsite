@@ -41,7 +41,7 @@ function ISODateString(d) {
 
 function Add5Hours (time) {
   var newTime = new Date(time);
-  if (newTime.getHours() > 18) {
+  if (newTime.getHours() > 18) {    
     newTime.setDate(newTime.getDate() + 1);
     newTime.setHours(newTime.getHours() - 19);
   } else {
